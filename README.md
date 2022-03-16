@@ -9,7 +9,7 @@
 
 ## Authentication using Laravel Sanctum
 
-In this Project I use both API Token Authentication and SPA Authentication using Laravel Sanctum
+In this Project I use both API Token Authentication and SPA Authentication using Laravel Sanctum.
 Here I follow the following documentation links -
 
 - [Laravel Sanctum](https://laravel.com/docs/8.x/sanctum) 

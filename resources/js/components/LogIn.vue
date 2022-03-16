@@ -66,7 +66,27 @@ export default {
     }),
     methods: {
         handleSubmit(){
-            this.$router.push({name:"dashboard"})
+            // Csrf.getCookie().then(()=>{
+                User.login(this.formData)
+                    .then(()=>{
+                        this.$root.$emit('login',true);
+                        localStorage.setItem("auth","true");
+                        this.$router.push({name:"home"})
+                        // User.getUser();
+                        // Secret.getSecret();
+                    })
+                    .catch(error => {
+                        console.log(error.response.data.message);
+                    })
+
+            // })
+
+            // axios.get('/sanctum/csrf-cookie').then(response => {
+            //     axios.post('/login',this.formData).then(response => {
+            //         this.getSecrets()
+            //     })
+            // });
+
 
 
         },

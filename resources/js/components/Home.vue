@@ -3,11 +3,14 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Welcome</div>
+                    <div class="card-header">
+                        Dashboard
 
+                    </div>
                     <div class="card-body">
-                        <router-link to="/login" class="btn btn-secondary">login</router-link>
-                        <router-link to="/home" class="btn btn-primary">Home</router-link>
+                        You are logged in!<br>
+<!--                        Email: {{user.email}}<br>-->
+<!--                        Name: {{user.name}}-->
                     </div>
                 </div>
             </div>
@@ -16,8 +19,10 @@
 </template>
 
 <script>
+import User from "../apis/User";
+
 export default {
-    name: "WelcomeComponent"
+    name: "Home"
 }
 </script>
 

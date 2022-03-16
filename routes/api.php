@@ -17,10 +17,11 @@ use App\Http\Controllers\API\SecretController;
 |
 */
 
-Route::get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return Auth::user();
-})->middleware('auth:sanctum');
+});
 Route::post('login', [AuthController::class, 'signin']);
+Route::post('logout', [AuthController::class, 'logout']);
 Route::post('register', [AuthController::class, 'signup']);
 
 Route::middleware('auth:sanctum')->group( function () {

@@ -20,16 +20,16 @@ use App\Http\Controllers\API\SecretController;
 //    return view('welcome');
 //});
 
-Auth::routes();
+//Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+//Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('secrets', [SecretController::class,'index'])->middleware('auth:api');
 
 
-//Route::get('/{any}', function () {          // For Practice
-//    return view('layouts.app');
-//})->where('any', '.*');
-Route::get('/{any}', [HomeController::class, 'index'])->where('any', '.*');
+Route::get('/{any}', function () {          // For Practice
+    return view('layouts.app');
+})->where('any', '.*');
+//Route::get('/{any}', [HomeController::class, 'index'])->where('any', '.*');
 //Route::get('/{any}', function ($any) {          // For Practice
 //    return view('layouts.app');
 //})->where('any', '.*');

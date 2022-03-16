@@ -7,6 +7,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Authentication using Laravel Sanctum
+
+In this Project I use both API Token Authentication and SPA Authentication using Laravel Sanctum
+Here I follow the following documentation links -
+
+- [Laravel Sanctum](https://laravel.com/docs/8.x/sanctum) 
+- [SPA Authentication using Laravel Sanctum Tutorial](https://www.youtube.com/watch?v=8Uwn5M6WTe0&list=PLxDLJKLJZltFBwWoewHKnsP35BpCgLWFF&index=2) 
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
